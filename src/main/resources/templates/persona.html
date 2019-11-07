@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Persona</title>
+</head>
+<body>
+
+<div class="card" th:fragment="personaFrag(persona)">
+    <style>
+        .card{
+        padding:15px;
+        margin: 15px;
+        border: #333 solid 2px;
+        border-radius: 10px;
+        background: #CCC;
+        }
+
+
+    </style>
+
+    <div th:text="${persona.id}"></div>
+    <div th:text="${persona.nome}"></div>
+    <div th:text="${persona.cognome}"></div>
+
+
+</div>
+</body>
+</html>
